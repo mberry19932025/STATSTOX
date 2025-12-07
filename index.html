@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StatStox | Trading Panel</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+<div class="page-shell">
+
+  <!-- TOP NAV -->
+  <nav class="main-nav">
+    <div class="nav-left">
+      <img src="./images/logo.png" class="nav-logo" alt="StatStox Logo">
+      <span class="brand-text">STATSTOX</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Market</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="drafts.html">Drafts</a>
+      <a href="rules.html">Rules</a>
+      <a href="settings.html">Settings</a>
+      <a href="profile.html">Profile</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html" class="btn-primary">Sign Up</a>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HEADER -->
+  <h1 class="page-title">Trading Panel</h1>
+  <p class="page-subtitle">Trade Rise/Fall positions based on player performance projections.</p>
+
+
+  <!-- TRADING PANEL -->
+  <div class="trade-container">
+
+    <!-- LEFT SIDE: PLAYER + CHART -->
+    <div class="trade-left">
+
+      <div class="trade-player">
+        <img src="./images/correctplayer.png" class="trade-player-photo" alt="">
+        <div>
+          <h2 class="trade-player-name">LeBron James</h2>
+          <p class="trade-player-team">LAL • SF</p>
+        </div>
+      </div>
+
+      <div class="trade-chart">
+        <p class="chart-placeholder">
+          📈 Player Price Chart (Coming Soon)
+        </p>
+      </div>
+
+      <div class="trade-stats">
+        <p>Current Price: <span class="emerald">$12.44</span></p>
+        <p>24h Change: <span class="positive">+4.22%</span></p>
+        <p>Volume: 14,218 shares</p>
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE: ORDER CONTROLS -->
+    <div class="trade-right">
+
+      <!-- ORDER TYPE -->
+      <div class="trade-box">
+        <h3>Order Type</h3>
+
+        <div class="order-type-buttons">
+          <button class="btn-rise">Rise</button>
+          <button class="btn-fall">Fall</button>
+        </div>
+      </div>
+
+
+      <!-- SHARE AMOUNT -->
+      <div class="trade-box">
+        <h3>Shares</h3>
+        <input type="number" class="trade-input" placeholder="0">
+      </div>
+
+
+      <!-- STOP LOSS -->
+      <div class="trade-box">
+        <h3>Stop-Loss</h3>
+        <input type="range" min="1" max="100" class="trade-slider">
+        <p class="slider-label">Auto-sell if price drops below your % threshold.</p>
+      </div>
+
+      <!-- TAKE PROFIT -->
+      <div class="trade-box">
+        <h3>Take-Profit</h3>
+        <input type="range" min="1" max="100" class="trade-slider">
+        <p class="slider-label">Auto-sell when your target % gain is reached.</p>
+      </div>
+
+
+      <!-- ORDER SUMMARY -->
+      <div class="trade-summary">
+        <h3>Order Summary</h3>
+        <p>Order Type: <span class="emerald">Rise</span></p>
+        <p>Shares: <span>—</span></p>
+        <p>Estimated Cost: <span>$0.00</span></p>
+        <p>Potential Return: <span>—</span></p>
+      </div>
+
+
+      <!-- SUBMIT -->
+      <button class="btn-primary trade-submit">Submit Order</button>
+
+    </div><!-- /trade-right -->
+
+  </div><!-- /trade-container -->
+
+</div><!-- /page-shell -->
+
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a href="index.html" class="nav-item">
+    <span>📊</span>
+    <span class="nav-label">Board</span>
+  </a>
+
+  <a href="entries.html" class="nav-item">
+    <span>🧾</span>
+    <span class="nav-label">Entries</span>
+  </a>
+
+  <a href="feed.html" class="nav-item">
+    <span>📰</span>
+    <span class="nav-label">Feed</span>
+  </a>
+
+  <a href="promos.html" class="nav-item">
+    <span>🏆</span>
+    <span class="nav-label">Promos</span>
+  </a>
+
+  <a href="profile.html" class="nav-item">
+    <span>👤</span>
+    <span class="nav-label">Profile</span>
+  </a>

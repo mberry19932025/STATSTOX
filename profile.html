@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StatStox | Profile</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+<div class="page-shell">
+
+    <!-- ====================== TOP NAV ====================== -->
+    <nav class="main-nav">
+
+        <!-- Left: Logo -->
+        <div class="nav-left">
+            <img src="./images/logo.png" alt="StatStox Logo" class="nav-logo" />
+            <span class="brand-text">StatStox</span>
+        </div>
+
+        <!-- Center: Top Links -->
+        <div class="nav-links">
+            <a href="index.html">Market</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="drafts.html">Drafts</a>
+            <a href="rules.html">Rules</a>
+            <a href="settings.html">Settings</a>
+            <a href="profile.html" class="nav-link-active">Profile</a>
+        </div>
+
+        <!-- Right: Login / Signup -->
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="signup.html" class="btn-primary">Sign Up</a>
+        </div>
+
+    </nav>
+
+
+    <!-- ====================== PROFILE HEADER ====================== -->
+    <header class="profile-header">
+        <img src="./images/correctplayer.png" alt="User Avatar" class="profile-avatar" />
+        <h2 class="profile-name">MICH1993</h2>
+        <p class="profile-joined">Joined October 2022</p>
+
+        <!-- Mini stats row -->
+        <div class="profile-mini-stats">
+            <div class="mini-box">
+                <span class="mini-number">0</span>
+                <span class="mini-label">Followers</span>
+            </div>
+            <div class="mini-box">
+                <span class="mini-number">0</span>
+                <span class="mini-label">Following</span>
+            </div>
+            <div class="mini-box">
+                <span class="mini-number emerald">$0.00</span>
+                <span class="mini-label">Promo Funds</span>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ====================== PRIVACY TOGGLE ====================== -->
+    <section class="privacy-section">
+        <div class="privacy-box">
+            <h3 class="privacy-title">Profile Private</h3>
+            <p class="privacy-text">
+                Your profile is now private. Only followers you approve will be able to view your stats and lineups.
+            </p>
+
+            <label class="toggle-switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+            </label>
+        </div>
+    </section>
+
+
+    <!-- ====================== MOST PICKED PLAYERS ====================== -->
+    <section class="top-players-section">
+        <h3 class="section-title">Most Picked Players</h3>
+
+        <div class="top-player-list">
+
+            <!-- Player 1 -->
+            <div class="top-player-card">
+                <img src="./images/correctplayer.png" class="top-player-photo" alt="LeBron James" />
+                <p class="top-player-name">LeBron James</p>
+                <p class="top-player-league">NBA</p>
+            </div>
+
+            <!-- Player 2 -->
+            <div class="top-player-card">
+                <img src="./images/correctplayer.png" class="top-player-photo" alt="Jayson Tatum" />
+                <p class="top-player-name">Jayson Tatum</p>
+                <p class="top-player-league">NBA</p>
+            </div>
+
+            <!-- Player 3 -->
+            <div class="top-player-card">
+                <img src="/images/correctplayer.png" class="top-player-photo" alt="Stephen Curry" />
+                <p class="top-player-name">Stephen Curry</p>
+                <p class="top-player-league">NBA</p>
+            </div>
+
+        </div>
+    </section>
+
+</div> <!-- END page-shell -->
+
+
+<!-- ====================== BOTTOM NAV ====================== -->
+<nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item">
+        <span class="nav-icon">🏦</span>
+        <span class="nav-label">Board</span>
+    </a>
+
+    <a href="entries.html" class="nav-item">
+        <span class="nav-icon">📄</span>
+        <span class="nav-label">Entries</span>
+    </a>
+
+    <a href="feed.html" class="nav-item">
+        <span class="nav-icon">📰</span>
+        <span class="nav-label">Feed</span>
+    </a>
+
+    <a href="promos.html" class="nav-item">
+        <span class="nav-icon">🎁</span>
+        <span class="nav-label">Promos</span>
+    </a>
+
+    <!-- ACTIVE PAGE -->
+    <a href="profile.html" class="nav-item active">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Profile</span>
+    </a>
+
+</nav>
+
+
+</body>
+</html>
