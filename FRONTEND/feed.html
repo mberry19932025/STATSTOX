@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StatStox | Feed</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+<div class="page-shell">
+
+  <!-- TOP NAV -->
+  <nav class="main-nav">
+    <div class="nav-left">
+      <img src="./images/logo.png" class="nav-logo" alt="StatStox Logo" />
+      <span class="brand-text">STATSTOX</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Market</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="drafts.html">Drafts</a>
+      <a href="rules.html">Rules</a>
+      <a href="settings.html">Settings</a>
+      <a href="profile.html">Profile</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html" class="btn-primary">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <h1 class="page-title">Live Feed</h1>
+  <p class="page-subtitle">Real-time insights, injury news, projections & market movement.</p>
+
+  <!-- FEED LIST -->
+  <div class="feed-list">
+
+    <!-- FEED ITEM 1 -->
+    <div class="feed-card">
+      <h3 class="feed-title">🔥 BREAKING: Anthony Davis — Game-Time Decision</h3>
+      <p class="feed-text">
+        Lakers announce AD will warm up before determining availability.  
+        <span class="feed-highlight">Projection volatility expected.</span>
+      </p>
+      <p class="feed-time">3 minutes ago</p>
+    </div>
+
+    <!-- FEED ITEM 2 -->
+    <div class="feed-card">
+      <h3 class="feed-title">📈 Rise Alert: Shai Gilgeous-Alexander Trending Up</h3>
+      <p class="feed-text">
+        Market movement indicates increased BUY pressure.  
+        SGA shares increased <span class="positive">+4.3%</span> over the last hour.
+      </p>
+      <p class="feed-time">10 minutes ago</p>
+    </div>
+
+    <!-- FEED ITEM 3 -->
+    <div class="feed-card">
+      <h3 class="feed-title">🩹 Injury Update: Trae
+
+        <div id="feed-list"></div>
+        <!-- Load JS in the correct order -->
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/feed.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

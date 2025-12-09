@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StatStox | Profile</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+<div class="page-shell">
+
+  <!-- TOP NAV -->
+  <nav class="main-nav">
+    <div class="nav-left">
+      <img src="./images/logo.png" class="nav-logo" alt="StatStox Logo">
+      <span class="brand-text">STATSTOX</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Market</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="drafts.html">Drafts</a>
+      <a href="rules.html">Rules</a>
+      <a href="settings.html">Settings</a>
+      <a href="profile.html" class="nav-link-active">Profile</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html" class="btn-primary">Sign Up</a>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HEADER -->
+  <div class="profile-header">
+
+    <img src="./images/correctplayer.png" class="profile-avatar" alt="User Avatar">
+
+    <div class="profile-info">
+      <h1 class="profile-name">Michael B.</h1>
+      <p class="profile-username">@statstox_user</p>
+    </div>
+
+  </div>
+
+
+  <!-- PROFILE STATS -->
+  <section class="profile-stats">
+    <div class="profile-stat-card">
+      <p>Total Winnings</p>
+      <h3>$2,987.14</h3>
+    </div>
+
+    <div class="profile-stat-card">
+      <p>Entries Completed</p>
+      <h3>146</h3>
+    </div>
+
+    <div class="profile-stat-card">
+      <p>Rise/Fall Trades</p>
+      <h3>62</h3>
+    </div>
+
+    <div class="profile-stat-card">
+      <p>Promo Balance</p>
+      <h3 class="emerald">$48.00</h3>
+    </div>
+  </section>
+
+
+  <!-- QUICK LINKS -->
+  <h2 class="section-title">Quick Actions</h2>
+
+  <div class="quick-links">
+
+    <a href="portfolio.html" class="quick-card">
+      <span>💼</span>
+      <p>Portfolio</p>
+    </a>
+
+    <a href="entries.html" class="quick-card">
+      <span>🧾</span>
+      <p>My Entries</p>
+    </a>
+
+    <a href="promos.html" class="quick-card">
+      <span>🏆</span>
+      <p>Promos</p>
+    </a>
+
+    <a href="settings.html" class="quick-card">
+      <span>⚙️</span>
+      <p>Settings</p>
+    </a>
+
+  </div>
+
+
+  <!-- ACTIVITY LOG -->
+  <h2 class="section-title">Recent Activity</h2>
+
+  <div class="activity-list">
+
+    <div class="activity-card">
+      <p class="activity-text">
+        ✔ You won your 3-pick NBA entry (+$42.50)
+      </p>
+      <p class="activity-time">2 hours ago</p>
+    </div>
+
+    <div class="activity-card">
+      <p class="activity-text">
+        📈 Rise Trade: SGA ↑ +4.3% gain on 10 shares
+      </p>
+      <p class="activity-time">6 hours ago</p>
+    </div>
+
+    <div class="activity-card">
+      <p class="activity-text">
+        📝 Saved Draft: NFL 2-pick entry
+      </p>
+      <p class="activity-time">Yesterday</p>
+    </div>
+
+  </div><!-- /activity-list -->
+
+</div><!-- /page-shell -->
+
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a href="index.html" class="nav-item">
+    <span>📊</span>
+    <span class="nav-label">Board</span>
+  </a>
+
+  <a href="entries.html" class="nav-item">
+    <span>🧾</span>
+    <span class="nav-label">Entries</span>
+  </a>
+
+  <a href="feed.html" class="nav-item">
+    <span>📰</span>
+    <span class="nav-label">Feed</span>
+  </a>
+
+  <a href="promos.html" class="nav-item">
+    <span>🏆</span>
+    <span class="nav-label">Promos</span>
+  </a>
+
+  <a href="profile.html" class="nav-item active">
+    <span>👤</span>
+    <span class="nav-label">Profile</span>
+  </a>
+</nav>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/feed.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

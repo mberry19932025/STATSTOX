@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StatStox | My Entries</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+<div class="page-shell">
+
+  <!-- TOP NAV -->
+  <nav class="main-nav">
+    <div class="nav-left">
+      <img src="./images/logo.png" class="nav-logo" alt="StatStox Logo">
+      <span class="brand-text">STATSTOX</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Market</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="drafts.html">Drafts</a>
+      <a href="rules.html">Rules</a>
+      <a href="settings.html">Settings</a>
+      <a href="profile.html">Profile</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html" class="btn-primary">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- PAGE TITLE -->
+  <h1 class="page-title">My Entries</h1>
+  <p class="page-subtitle">Track your active picks, closed plays, and Rise/Fall trades.</p>
+
+  <!-- FILTERS -->
+  <div class="filter-tabs">
+    <button class="filter-btn active">Active</button>
+    <button class="filter-btn">Pending</button>
+    <button class="filter-btn">Settled</button>
+    <button class="filter-btn">Rise/Fall Trades</button>
+  </div>
+
+  <!-- ENTRIES LIST -->
+  <div class="player-list">
+
+    <!-- ENTRY CARD 1 (ACTIVE) -->
+    <div class="player-card">
+
+      <!-- Left: Player -->
+      <div class="player-left">
+        <img src="./images/correctplayer.png" class="player-photo" alt="">
+        <div>
+          <h3 class="player-name">Jayson Tatum</h3>
+          <p class="player-team">BOS • SF</p>
+        </div>
+      </div>
+
+      <!-- Middle: DFS Choice -->
+      <div class="projection-box">
+        <p class="proj-label">YOUR PICK</p>
+        <h2 class="proj-value">Higher 27.5</h2>
+
+        <span style="
+          font-size: 0.75rem;
+          color: var(--emerald);
+          text-shadow: 0 0 8px var(--emerald-soft);
+        ">
+          ACTIVE
+        </span>
+      </div>
+
+      <!-- Right: Summary -->
+      <div class="market-box">
+        <p class="market-price">Entry ID: #44182</p>
+        <p class="market-change positive">+3.2% projection shift</p>
+      </div>
+    </div>
+
+    <!-- ENTRY CARD 2 (PENDING) -->
+    <div class="player-card">
+
+      <div class="player-left">
+        <img src="./images/correctplayer.png" class="player-photo" alt="">
+        <div>
+          <h3 class="player-name">Joel Embiid</h3>
+          <p class="player-team">PHI • C</p>
+        </div>
+      </div>
+
+      <div class="projection-box">
+        <p class="proj-label">YOUR PICK</p>
+        <h2 class="proj-value">Lower 12.5 REB</h2>
+
+        <span style="
+          font-size: 0.75rem;
+          color: var(--text-muted);
+        ">
+          PENDING
+        </span>
+      </div>
+
+      <div class="market-box">
+        <p class="market-price">Entry ID: #44173</p>
+        <p class="market-change">Awaiting game start</p>
+      </div>
+    </div>
+
+    <!-- ENTRY CARD 3 (RISE/FALL TRADE) -->
+    <div class="player-card">
+
+      <div class="player-left">
+        <img src="./images/correctplayer.png" class="player-photo" alt="">
+        <div>
+          <h3 class="player-name">Luka Dončić</h3>
+          <p class="player-team">DAL • PG</p>
+        </div>
+      </div>
+
+      <div class="projection-box">
+        <p class="proj-label">RISE / FALL</p>
+        <h2 class="proj-value">Rise @ $14.22</h2>
+
+        <span style="
+          font-size: 0.75rem;
+          color: var(--emerald);
+          text-shadow: 0 0 8px var(--emerald-soft);
+        ">
+          TRADE ACTIVE
+        </span>
+      </div>
+
+      <div class="market-box">
+        <p class="market-price">Shares: 12</p>
+        <p class="market-change positive">Current: $15.10 (+6.1%)</p>
+      </div>
+    </div>
+
+  </div><!-- /player-list -->
+
+</div><!-- /page-shell -->
+
+<!-- Bottom Nav -->
+<nav class="bottom-nav">
+  <a href="index.html" class="nav-item">
+    <span>📊</span>
+    <span class="nav-label">Board</span>
+  </a>
+
+  <a href="entries.html" class="nav-item active">
+    <span>🧾</span>
+    <span class="nav-label">Entries</span>
+  </a>
+
+  <a href="feed.html" class="nav-item">
+    <span>📰</span>
+    <span class="nav-label">Feed</span>
+  </a>
+
+  <a href="promos.html" class="nav-item">
+    <span>🏆</span>
+    <span class="nav-label">Promos</span>
+  </a>
+
+  <a href="profile.html" class="nav-item">
+    <span>👤</span>
+    <span class="nav-label">Profile</span>
+  </a>
+</nav>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/feed.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
